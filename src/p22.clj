@@ -1,7 +1,7 @@
 Clojure solution
 ; much cleaner
 (ns euler.p22
-  (:use [clojure.string :only [split］))
+  (:use [clojure.string :only [split]]))
 
 (->>
  (split (slurp "names.txt") #",")

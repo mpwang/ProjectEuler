@@ -30,13 +30,13 @@ length = len(lst)
 ops = []
 for i in range(0,length):
         if i + 3 < length and i % line < line -3:
-                ops.append([lst[i],lst[i+1],lst[i+2],lst[i+3］)
+                ops.append([lst[i],lst[i+1],lst[i+2],lst[i+3]])
         if i + 3 * line < length and i//line < line - 3:
-                ops.append([lst[i],lst[i+ 1*line],lst[i+ 2*line],lst[i+3*line］)
+                ops.append([lst[i],lst[i+ 1*line],lst[i+ 2*line],lst[i+3*line]])
         if i + 3 * line + 3 < length and i % line < line - 3:
-                        ops.append([lst[i],lst[i+1*line+1],lst[i+2*line+2],lst[i+3*line+3］)
+                        ops.append([lst[i],lst[i+1*line+1],lst[i+2*line+2],lst[i+3*line+3]])
         if i + 3 * line - 3 < length and i % line > 2 :
-                ops.append([lst[i],lst[i+1*line-1],lst[i+2*line-2],lst[i+3*line-3］)
+                ops.append([lst[i],lst[i+1*line-1],lst[i+2*line-2],lst[i+3*line-3]])
 directions = []
 for item in ops:
         directions.append(reduce(lambda x,y:x*y,item))
