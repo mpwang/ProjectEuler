@@ -12,7 +12,7 @@ for i in range(0,len(string)):
         if i + 5 <= len(string):
                 lst.append(string[i:i+5])
 
-lst = [ prod(item) for item in lst[:］
+lst = [ prod(item) for item in lst[:］]
 lst = sorted(lst)
 print(lst)
 
