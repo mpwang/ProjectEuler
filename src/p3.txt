@@ -1,0 +1,7 @@
+1.
+old sad unix programmer
+facotr 600851475143
+
+2.
+shell hacker
+time (echo 2; seq 3 2 999999 | factor | awk 'NF == 2{ print $2 }') | sed '1,10000d;q'

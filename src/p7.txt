@@ -1,0 +1,16 @@
+WTF! Cheating
+
+1.
+dplass1 said
+Just asked Yahoo search "what is the 10001st prime?"
+
+2.
+using J
+p: 10000
+
+3.
+Mathematica
+Prime[10001]
+
+4.
+find the Prime Pages website!!!
