@@ -33,10 +33,10 @@ int isPrime(long long n) {
  * bi = - 1/fi
  * Fn = (fi ** n - (-fi) ** (-n))/sqrt(5)
  */
-int fib(int n) {
+long fib(long n) {
         double fi = (1 + sqrt(5))/2;
         double rs = (pow(fi, n) - pow(-fi, -n))/sqrt(5);
-        return (int)rs;
+        return (long)rs;
 }
 #endif
 
