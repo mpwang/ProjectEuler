@@ -170,3 +170,6 @@ pip-log.txt
 # workspace
 *.exe
 *.o
+
+# ProjectEuler
+overview

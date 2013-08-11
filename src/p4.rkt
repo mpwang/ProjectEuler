@@ -1,7 +1,7 @@
 #lang racket
 
 ;awful! not good
-;not familiar with scheme. FUCK!!!
+;not familiar with scheme.
 
 (define (isPalindrome? str)
   (do ((s 0 (+ s 1))
@@ -24,4 +24,3 @@
                 empty))
 
 (print v)
-
