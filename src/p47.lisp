@@ -14,8 +14,9 @@
         (when (zerop (mod n i))
           (return-from prime-factor
             (cons i (prime-factor (/ n i)))))))))
-;5 sec
-;thish solution get stack overflow on clisp on osx 10.8
+
+;this solution get stack overflow on clisp on osx 10.8
+;SBCL only take 1.02 sec
 ;(time (euler47))
 
 ; translate from p47.py python solution, a lot better performence
@@ -37,5 +38,6 @@
                   do (loop for k from (* i 2) below limit by i
                                    do (incf (aref nums k))))))
 
-;0.1sec
+;SBCL 0.003s
+;python version take 0.16s
 (time (p47))
