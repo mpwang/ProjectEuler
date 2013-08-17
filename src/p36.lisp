@@ -7,4 +7,4 @@
                                 (palindromic? (write-to-string n :base 2)))
                 sum n))
 
-(p36)
+(time (print (p36)))

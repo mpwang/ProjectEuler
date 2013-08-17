@@ -18,5 +18,5 @@ for i in range (2,200001):
           break
     else:
        if nums[i] == 0:
-          for j in range (2,math.floor(200001/i)):
+          for j in range (2,int(math.floor(200001/i))):
               nums[i*j] += 1

@@ -11,7 +11,5 @@ int main() {
                 }
         }
         printf("sum: %lld ", sum);
-
         return 0;
 }
-

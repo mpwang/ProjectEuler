@@ -19,7 +19,7 @@
   (= n (loop for ch across (princ-to-string n)
                          sum (! (- (char-int ch) (char-int #\0))))))
 
-(p34)
+(time (print (p34)))
 
 
 ;http://mathworld.wolfram.com/Factorion.html

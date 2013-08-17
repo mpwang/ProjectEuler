@@ -40,3 +40,5 @@
                   (let ((equdiff-sublist (get-equidiff-sublist vsort)))
                         (when equdiff-sublist (print equdiff-sublist)))))()
 )
+
+(time (print (p49)))

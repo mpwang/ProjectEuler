@@ -48,8 +48,7 @@ int main() {
         }
         long et = clock();
         printf("max:%lld\n",maxPrime);
-        printf("time:%dms\n", et-st);
+        printf("time:%ldms\n", et-st);
 
         return 0;
 }
-

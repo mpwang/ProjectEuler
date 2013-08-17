@@ -16,4 +16,4 @@
                                          (expt 9 5))
                                   n)
                 finally (return n)))
-(p30)
+(time (print (p30)))

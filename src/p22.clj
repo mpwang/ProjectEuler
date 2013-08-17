@@ -1,4 +1,4 @@
-Clojure solution
+; Clojure solution
 ; much cleaner
 (ns euler.p22
   (:use [clojure.string :only [split]]))
@@ -11,5 +11,5 @@ Clojure solution
     (* (inc idx)
        (apply + (map #(- (int %) 64)
                      (.substring name 1 (dec (.length name))))))))
- (apply +))
-
+ (apply +)
+ print)

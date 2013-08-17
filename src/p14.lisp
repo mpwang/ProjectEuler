@@ -18,11 +18,12 @@
                                 (+ (gethash x *RS*) (length ac)))
                   (gethash (car ac) *RS*))))
 
-(loop with max-num = 0
+(print
+ (loop with max-num = 0
           with max-len = 0
           for num from 1000000 downto 1
           for len = (chain num nil)
           if (> len max-len) do
           (setf max-num num
                         max-len len)
-          finally (return max-num))
+          finally (return max-num)))

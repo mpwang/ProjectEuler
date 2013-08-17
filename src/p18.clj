@@ -1,4 +1,6 @@
 ; 动态规划
+(ns p18
+  (:require clojure.pprint))
 (def data
   [[75]
    [95 64]
@@ -21,21 +23,3 @@
    [7 4]
    [2 4 6]
    [8 5 9 3]])
-
-(def internal (ref []))
-
-(println
-  (map-indexed
-    (fn [x x-item]
-      (map-indexed
-        (fn [y y-item]
-          (if (= y 0)
-            (dosync alter internal conj [y-item])
-            (dosync alter internal
-              )
-            )
-          )
-        )
-      x-item)
-    test-data))
-

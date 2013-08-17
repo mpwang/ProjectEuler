@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <math.h>
+
 int range = 100;
 
 double solution1() {
@@ -16,4 +19,3 @@ int main() {
         printf("%f\n", v);
         return 0;
 }
-

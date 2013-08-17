@@ -5,4 +5,4 @@
                                 do (pushnew (expt i j) rs)))
         (length rs)))
 
-(p29 100)
+(time (print (p29 100)))

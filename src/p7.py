@@ -5,7 +5,7 @@ def findPrime(limit):
     import math
     n=3
     primes = [2,]
-    while len(primes)<limit:
+    while len(primes)<=limit:
         for x in primes[:int(math.sqrt(len(primes)))]:
             if not(n%x): break
         else: primes.append(n)
@@ -13,4 +13,3 @@ def findPrime(limit):
     return max(primes)
 
 print(findPrime(10001))
-

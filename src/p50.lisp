@@ -52,7 +52,7 @@
                 (format t "prime: ~a~%add up by ~a~%start from number ~a end ~a~%"
                                 maxK (first maxV) (second maxV) (third maxv))))
 
-;(time (progn (p50 (expt 10 6)) nil))
+(time (progn (p50 (expt 10 6)) nil))
 
 ;top-down solution
 ;too slow

@@ -3,7 +3,7 @@ maximum = 0
 def find(x):
         global maximum
         n = x
-        print('find:',n)
+        #print('find:',n)
         stack = []
         while x != 1:
                 stack.append(x)
@@ -22,4 +22,3 @@ for n in range(2,10000000):
         find(n)
 
 print("max: ",maximum+1)
-

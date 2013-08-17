@@ -101,5 +101,4 @@ string = """
 53503534226472524250874054075591789781264330331690
 """
 
-print(str(sum([int(d) for d in string.split("\n")[1:-1£İ))[:10])
-				
+print(str(sum([int(d) for d in string.split("\n")[1:-1]]))[:10])

@@ -15,7 +15,8 @@
           (return-from prime-factor
             (cons i (prime-factor (/ n i)))))))))
 ;5 sec
-(time (euler47))
+;thish solution get stack overflow on clisp on osx 10.8
+;(time (euler47))
 
 ; translate from p47.py python solution, a lot better performence
 (defun p47 ()

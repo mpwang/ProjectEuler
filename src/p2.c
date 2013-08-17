@@ -11,6 +11,9 @@
  * bi = - 1/fi
  * Fn = (fi ** n - (-fi) ** (-n))/sqrt(5)
  */
+#include <stdio.h>
+#include <math.h>
+
 int fib(int n) {
         double fi = (1 + sqrt(5))/2;
         double rs = (pow(fi, n) - pow(-fi, -n))/sqrt(5);
@@ -76,4 +79,3 @@ int main() {
         solution2();
         return 0;
 }
-

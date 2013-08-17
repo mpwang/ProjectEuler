@@ -7,10 +7,10 @@
               (unless (or (= i 1) (= i d))
                 (push d divs)))))
     divs))
- 
+
 (defun abundant-p (x)
   (> (reduce #'+ (find-divisors x)) x))
- 
+
 (defun euler-proj-23 (&optional (size 28123))
   (let ((sums-of-abundants (make-array size :element-type 'bit))
         (abundants nil))
@@ -23,7 +23,7 @@
     (loop for i from 0 below size
          when (zerop (elt sums-of-abundants i))
          sum i)))
-=====================================================
+;; =====================================================
 
 ;prime factors
 (defun prime-factor-slow (n)
@@ -79,4 +79,4 @@
         (loop for k being the hash-keys of two-ab-sum-nums do (remhash k rs))
         (loop for k being the hash-keys of rs sum k)
         ))
-(time (p23))
+(time (print (p23)))

@@ -25,4 +25,4 @@
 
 ;0.015 sec
 ;good
-(time (p49))
+(time (print (p49)))
