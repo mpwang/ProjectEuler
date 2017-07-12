@@ -177,3 +177,5 @@ overview
 # Lisp
 *.fasl
 
+# VS Code
+.vscode/
