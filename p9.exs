@@ -1,5 +1,5 @@
 defmodule P9 do
-  def go do
+  def solve do
     for a <- 1..round(1000 / 3),
         b <- a..round((1000 - a) / 2),
         c <- b..1000,
@@ -9,9 +9,9 @@ defmodule P9 do
     |> Enum.filter(fn [a, b, c] ->
       :math.pow(a, 2) + :math.pow(b, 2) == :math.pow(c, 2)
     end)
-    |> List.first
+    |> List.flatten
     |> Enum.reduce(&*/2)
     |> IO.inspect
   end
 end
-P9.go
+P9.solve()

@@ -1,6 +1,5 @@
 defmodule P8 do
-  def go(adj_count) do
-    num1000 = "
+  @num1000 "
     73167176531330624919225119674426574742355349194934
     96983520312774506326239578318016984801869478851843
     85861560789112949495459501737958331952853208805511
@@ -21,16 +20,19 @@ defmodule P8 do
     84580156166097919133875499200524063689912560717606
     05886116467109405077541002256983155200055935729725
     71636269561882670428252483600823257530420752963450
-    "
-    num1000
+  "
+
+  def solve(adj_count) do
+    @num1000
+    # normalize string
     |> String.replace(~r/\s/, "")
     |> String.split("", trim: true)
     |> Enum.map(&(String.to_integer(&1)))
-
+    # calculate
     |> Enum.chunk(adj_count, 1)
     |> Enum.map(fn chunk -> Enum.reduce(chunk, &*/2) end)
     |> Enum.max
     |> IO.inspect
   end
 end
-P8.go(13)
+P8.solve(13)

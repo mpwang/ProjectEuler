@@ -1,5 +1,5 @@
 defmodule P14 do
-  def go(limit) do    
+  def solve(limit) do
     collatz_sequence_length = fn n ->
       Stream.iterate(n, &next_collatz/1)
       |> Enum.take_while(fn x -> x >= 2 end)
@@ -21,4 +21,4 @@ defmodule P14 do
     end
   end
 end
-P14.go(:math.pow(10, 6) |> round)
+P14.solve(round(:math.pow(10, 6))

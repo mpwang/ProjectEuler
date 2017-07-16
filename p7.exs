@@ -1,7 +1,8 @@
 defmodule P7 do  
-  def findPrime(limit), do: go(limit, 3, [2], 1)
+  def solve(limit), do: go(limit, 3, [2], 1)
   
-  defp go(limit, _, primes, len) when len >= limit, do: IO.puts(List.last(primes))
+  defp go(limit, _, primes, len) when len >= limit,
+    do: IO.puts(List.last(primes))
   defp go(limit, n, primes, len) do
     n_is_prime? =
       primes
@@ -15,4 +16,4 @@ defmodule P7 do
   end
 end
 
-P7.findPrime(10001)
+P7.solve(10001)
